@@ -59,6 +59,9 @@
 .stats {
   padding: 10px;
 }
+hr{
+  border:0px 0px 1px 0px whitesmoke;
+}
 
 @media (max-width: 1400px) {
   .container {

@@ -32,6 +32,8 @@ function App () {
   const resetGrid = useCallback(() => {
     const newGrid = new Array(gridSize.x).fill(0).map(() => new Array(gridSize.y).fill(false))
     setGrid(newGrid)
+    setGeneration(0)
+    setTotalTime(0)
   }, [gridSize])
 
   useEffect(() => {
@@ -155,7 +157,22 @@ function App () {
   return (
     <div className="container">
       <h1>Conway&apos;s Game of Life</h1>
+      <b>Rules</b>
+      <ol>
 
+        <li>
+          Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+        </li>
+        <li>
+          Any live cell with two or three live neighbours lives on to the next generation.
+        </li>
+        <li>
+          Any live cell with more than three live neighbours dies, as if by overpopulation.
+        </li>
+        <li>
+          Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+        </li>
+      </ol>
       <div className="app">
         <div className="game" style={{ width: baseDim + 'px' }}>
           <div className="cell-grid">{renderedGrid}</div>
@@ -164,6 +181,7 @@ function App () {
 
       <div className="settings">
         <h2>Settings</h2>
+        <p>Click on a cell to toggle its state (alive/dead).</p>
         <fieldset>
           <legend>General settings</legend>
           <p>Toggle game</p>
