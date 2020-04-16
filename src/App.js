@@ -205,7 +205,7 @@ function App () {
           <p>Reset cells</p>
           <button onClick={resetGrid}>Reset</button>
         </fieldset>
-        <p>Created by By <a href="agrawal-d.github.io/">agrawal-d</a></p>
+        <p>Created by By <a href="https://agrawal-d.github.io/">agrawal-d</a></p>
         <p><a href="https://github.com/agrawal-d/game-of-life/blob/master/src/App.js">Source Code</a></p>
 
       </div>
