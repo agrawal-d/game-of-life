@@ -206,6 +206,8 @@ function App () {
           <button onClick={resetGrid}>Reset</button>
         </fieldset>
         <p>Created by By <a href="agrawal-d.github.io/">agrawal-d</a></p>
+        <p><a href="https://github.com/agrawal-d/game-of-life/blob/master/src/App.js">Source Code</a></p>
+
       </div>
       <div className="clearfix"></div>
       <div className="stats">
